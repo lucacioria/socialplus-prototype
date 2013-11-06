@@ -1,0 +1,12 @@
+.row
+  .col-lg-12
+    div(google-chart="", chart="d.chartVisibilityCountByDay", style="{{d.chartVisibilityCountByDay.cssStyle}}")
+.row
+  .col-lg-6
+    div(google-chart="", onselect="onDaySelected", chart="d.chartRestrictedCountByDay", style="{{d.chartRestrictedCountByDay.cssStyle}}")
+  .col-lg-6
+    div(google-chart="", chart="d.chartActivePeopleByDay", style="{{d.chartActivePeopleByDay.cssStyle}}")
+.row
+  .col-lg-12
+    h4 Popular activities
+    div(activity-box="", ng-cloak="", activities="d.popularActivities.byDay")
